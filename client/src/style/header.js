@@ -11,4 +11,6 @@ export const FormHeader = styled.header`
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
+ border-bottom: 1px solid #e6e6e6;
+ margin-bottom: 16px;
 `;
