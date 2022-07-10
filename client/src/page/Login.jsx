@@ -8,6 +8,7 @@ import FormButton from '../components/FormButton'
 
 const Login = () => {
   return (
+    // this is the login form
     <PageContent>
       <Form>
         <FormHeader/>
