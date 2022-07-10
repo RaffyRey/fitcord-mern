@@ -1,6 +1,7 @@
 import {Routes, Route} from 'react-router-dom';
 import {Suspense, lazy} from 'react'
 import Loading from './components/Loading';
+import { PageContainer } from './style/container';
 
 // lazy page
 const LoginLazy = lazy(() => import('./page/Login'));
@@ -10,7 +11,7 @@ const DashboardLazy = lazy(() => import('./page/Dashboard'));
 
 function App() {
   return (
-    <div >
+    <PageContainer >
       <Routes>
         <Route path="/login" element={
           <Suspense fallback={<Loading/>}>
@@ -30,7 +31,7 @@ function App() {
           </Suspense>
         } />
       </Routes>
-    </div>
+    </PageContainer>
   );
 }
 
