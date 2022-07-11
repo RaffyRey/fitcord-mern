@@ -1,8 +1,11 @@
 import React from 'react'
+import { LoadingSpinner, LoadingSpinnerContainer } from '../style/Loading'
 
 const Loading = () => {
   return (
-    <h1>Loading...</h1>
+    <LoadingSpinnerContainer>
+      <LoadingSpinner/>
+    </LoadingSpinnerContainer>
   )
 }
 
