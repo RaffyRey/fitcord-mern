@@ -2,6 +2,13 @@ import {Routes, Route} from 'react-router-dom';
 import {Suspense, lazy} from 'react'
 import Loading from './components/Loading';
 import { PageContainer } from './style/container';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// import Login from './page/Login';
+// import Register from './page/Register';
+// import Dashboard from './page/Dashboard';
+
 
 // lazy page
 const LoginLazy = lazy(() => import('./page/Login'));
@@ -31,6 +38,7 @@ function App() {
           </Suspense>
         } />
       </Routes>
+      <ToastContainer />
     </PageContainer>
   );
 }

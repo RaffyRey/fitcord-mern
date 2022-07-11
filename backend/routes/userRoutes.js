@@ -12,7 +12,7 @@ const { protect } = require('../middleware/authMiddleware')
 router.post('/login', loginUserController)
 
 // user register
-router.post('/register', registerUserController)
+router.post('/', registerUserController)
 
 // get user data
 router.get('/getMe', protect ,userDataController)
