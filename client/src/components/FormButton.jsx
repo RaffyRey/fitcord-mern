@@ -1,9 +1,9 @@
 import React from 'react'
 import { ButtonForm } from '../style/button'
 
-const FormButton = ({label}) => {
+const FormButton = ({label, type}) => {
   return (
-    <ButtonForm>{label}</ButtonForm>
+    <ButtonForm type={type}>{label}</ButtonForm>
   )
 }
 

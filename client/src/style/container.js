@@ -13,9 +13,9 @@ export const PageContainer = styled.div`
 export const PageContent = styled.main`
  width: 100%;
  max-width: 1440px;
- height: 100%;
+ padding-bottom: 30px;
  margin: 0 auto;
- border: 1px solid #000;
+ overflow: auto;
 `;
 
 export const Form = styled.form`
@@ -24,6 +24,7 @@ export const Form = styled.form`
  display: flex;
  flex-direction: column;
  align-items: center;
+ overflow: auto;
 
  span{
   font-size: .9rem;

@@ -1,4 +1,4 @@
-require('dotenv').config()
+const dotenv = require('dotenv').config()
 const express = require('express')
 const colors = require('colors')
 const connectMongoDB = require('./config/db')
@@ -17,7 +17,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // getting the routes
-app.use('/api/user', require('./routes/userRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/workout', require('./routes/workoutRoutes'))
 
 // error middleware
