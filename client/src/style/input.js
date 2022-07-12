@@ -13,7 +13,7 @@ export const FormInputContainer = styled.div`
    width: 100%;
    height: 45px;
    padding: 0 1rem;
-   font-size: 1.1rem;
+   font-size: .9rem;
    font-family: 'Poppins';
    border-radius: 8px;
    border: 1.5px solid #00193b;

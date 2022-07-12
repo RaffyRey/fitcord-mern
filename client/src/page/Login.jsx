@@ -62,7 +62,9 @@ const Login = () => {
     // this is the login form
     <PageContent>
       <Form onSubmit={onSubmit}>
-        <FormHeader/>
+        <FormHeader>
+          <span></span>
+        </FormHeader>
         <Input placeholder='Email' type='email' label='Email' value={email} name='email'  onchange={isOnChange}/>
         <Input placeholder='Password' type='password' label='Password' value={password} name='password'  onchange={isOnChange}/>
         <span>Don't have an account? <Link to='/register'>Register</Link></span>

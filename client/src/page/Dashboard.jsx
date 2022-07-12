@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { PageContent } from '../style/container'
+import { DashboardContent, PageContent } from '../style/container'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import Header from '../components/Header'
@@ -21,7 +21,9 @@ const Dashboard = () => {
   return (
     <PageContent>
       <Header/>
-      <h1>{user && user.firstname}</h1>
+      <DashboardContent>
+        <h1>Dashboard</h1>
+      </DashboardContent>
     </PageContent>
   )
 }

@@ -72,7 +72,9 @@ const Register = () => {
   return (
     <PageContent>
       <Form onSubmit={onSubmit}>
-        <FormHeader/>
+        <FormHeader>
+          <span></span>
+        </FormHeader>
         <Input placeholder='Last name' type='text' label='Last name' value={lastname} name='lastname'  onchange={isOnChange}/>
         <Input 
           placeholder='First name' 
