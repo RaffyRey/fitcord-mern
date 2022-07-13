@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react'
 import { DashboardContent, PageContent } from '../style/container'
-<<<<<<< HEAD
 import {  WorkoutDeleteButton, WorkoutItem, WorkoutItemContainer } from '../style/workoutItem'
-=======
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import Header from '../components/Header'
@@ -45,7 +42,6 @@ const Dashboard = () => {
     <PageContent>
       <Header/>
       <DashboardContent>
-<<<<<<< HEAD
         {workouts.length > 0 ? (
             <WorkoutItemContainer>
               {workouts.map((workout) => (
@@ -61,9 +57,7 @@ const Dashboard = () => {
               ))}
             </WorkoutItemContainer>
           ) : (<h3>You have not set any workout</h3>)}
-=======
         <h1>Dashboard</h1>
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
       </DashboardContent>
     </PageContent>
   )
