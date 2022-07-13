@@ -17,6 +17,17 @@ export const PageContent = styled.main`
  margin: 0 auto;
  position: relative;
  display: block;
+<<<<<<< HEAD
+=======
+`;
+
+export const DashboardContent = styled.div`
+ width: 100%;
+ height: calc(100% - 80px);
+ /* border: 1px solid black; */
+ display: flex;
+ flex-direction: column;
+>>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
 `;
 
 export const Form = styled.form`
