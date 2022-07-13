@@ -4,8 +4,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import {logout, reset} from '../features/auth/authSlice'
 import { toast } from 'react-toastify'
 import { DashBoardHeader } from '../style/header'
-import { LogoutButton, ProfileButton } from '../style/button'
-import { FaSignOutAlt, FaUserAlt } from "react-icons/fa"
+import { AddWorkoutButton, LogoutButton, ProfileButton } from '../style/button'
+import { FaSignOutAlt, FaUserAlt, FaPlus } from "react-icons/fa"
 import Modal from './Modal'
 import { ModalLogoutButtonContainer, ModalUserInfoContainer, UserInfoName, UserInfoProfileIcon, UserInfoWorkoutLength } from '../style/modal'
 
@@ -30,10 +30,15 @@ const clicked = () => {
   return (
     <DashBoardHeader>
       <span onClick={clicked}></span>
-      <ProfileButton onClick={() => setIsOpen(true)}>
-        <FaUserAlt />
-        {user && user.firstname}
-      </ProfileButton>
+      <main>
+        <AddWorkoutButton>
+          <FaPlus />
+        </AddWorkoutButton>
+        <ProfileButton onClick={() => setIsOpen(true)}>
+          <FaUserAlt />
+          {user && user.firstname}
+        </ProfileButton>
+      </main>
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <ModalUserInfoContainer>
           <UserInfoProfileIcon>

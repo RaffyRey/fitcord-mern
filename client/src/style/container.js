@@ -19,14 +19,6 @@ export const PageContent = styled.main`
  display: block;
 `;
 
-export const DashboardContent = styled.div`
- width: 100%;
- height: calc(100% - 80px);
- /* border: 1px solid black; */
- display: flex;
- flex-direction: column;
-`;
-
 export const Form = styled.form`
  width: 100%;
  height: 100%;
@@ -53,4 +45,9 @@ export const Form = styled.form`
    text-decoration: underline;
   }
  }
+`;
+
+export const DashboardContent = styled.div`
+ width: 100%;
+ height: calc(100% - 80px);
 `;

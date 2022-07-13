@@ -15,6 +15,40 @@ export const ButtonForm = styled.button`
  cursor: pointer;
 `;
 
+export const AddWorkoutButton = styled.button`
+  width: 50px;
+  height: 50px;
+  border-radius: 99999px;
+  border: none;
+  cursor: pointer;
+  background-color: #00193b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  :hover{
+    background-color: #0086eb;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &:after{
+      content: "Add Workout";
+      position: absolute;
+      color: #fff;
+      bottom: -50px;
+      width: 100px;
+      padding: 4px 0;
+      border-radius: 4px;
+      font-size: .8rem;
+      background-color: #0086eb;
+    }
+  }
+`;
+
 export const ProfileButton = styled.button`
  width: 150px;
  height: 50px;
@@ -31,6 +65,7 @@ export const ProfileButton = styled.button`
  display: flex;
  align-items: center;
  justify-content: center;
+ margin-left: 5px;
  /* box-shadow: 5px 5px 0px  #00193b; */
 
  svg{

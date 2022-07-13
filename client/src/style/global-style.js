@@ -22,4 +22,20 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   line-height: normal;
  }
+
+ ::-webkit-scrollbar {
+  width: 5px;
+  height: 100%;
+  background-color: #f5f5f5;
+ }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #00193b;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #0086eb;
+    }
+  }
 `;

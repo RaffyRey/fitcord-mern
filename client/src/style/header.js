@@ -34,7 +34,6 @@ export const DashBoardHeader = styled.header`
  height: 100px; 
  background-color: #fff;
  border-bottom: 1px solid #e6e6e6;
- background-color: transparent;
  position: sticky;
  top: 0;
  left: 0;
@@ -42,6 +41,14 @@ export const DashBoardHeader = styled.header`
  align-items: center;
  justify-content: space-between;
  padding: 0 1.5rem;
+ z-index: 1000;
+
+ main{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+ }
 
  span{
   height: 100px;
@@ -52,14 +59,14 @@ export const DashBoardHeader = styled.header`
   background-position: center;
   cursor: pointer;
 
-   :hover{
+    :hover{
     transform: scale3d(1.1, 1.1, 1.1);
     animation: beat .25s infinite alternate;
-   }
+    }
 
-   @keyframes beat{
+    @keyframes beat{
     to { transform: scale(1.4); }
-   }
+    }
   }
 `;
 
