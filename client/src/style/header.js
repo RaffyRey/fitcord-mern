@@ -58,7 +58,7 @@ export const DashBoardHeader = styled.header`
    }
 
    @keyframes beat{
-    to { transform: scale(1.4); }
+    to { transform: scale(1.11); }
    }
   }
 `;
