@@ -15,7 +15,6 @@ export const ButtonForm = styled.button`
  cursor: pointer;
 `;
 
-<<<<<<< HEAD
 export const AddWorkoutButton = styled.button`
   width: 50px;
   height: 50px;
@@ -50,8 +49,6 @@ export const AddWorkoutButton = styled.button`
   }
 `;
 
-=======
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
 export const ProfileButton = styled.button`
  width: 150px;
  height: 50px;
@@ -68,10 +65,7 @@ export const ProfileButton = styled.button`
  display: flex;
  align-items: center;
  justify-content: center;
-<<<<<<< HEAD
  margin-left: 5px;
-=======
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
  /* box-shadow: 5px 5px 0px  #00193b; */
 
  svg{

@@ -7,11 +7,7 @@ export const ModalOvelay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-<<<<<<< HEAD
   z-index: 9999;
-=======
-  z-index: 1000;
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
   background-color: rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 
@@ -21,11 +17,7 @@ export const UserModal = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-<<<<<<< HEAD
   z-index: 9999;
-=======
-  z-index: 1001;
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
   width: 500px;
   height: 450px;
   display: flex;

@@ -57,7 +57,6 @@ const Dashboard = () => {
               ))}
             </WorkoutItemContainer>
           ) : (<h3>You have not set any workout</h3>)}
-        <h1>Dashboard</h1>
       </DashboardContent>
     </PageContent>
   )

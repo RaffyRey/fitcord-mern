@@ -4,13 +4,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import {logout, reset} from '../features/auth/authSlice'
 import { toast } from 'react-toastify'
 import { DashBoardHeader } from '../style/header'
-<<<<<<< HEAD
 import { AddWorkoutButton, LogoutButton, ProfileButton } from '../style/button'
 import { FaSignOutAlt, FaUserAlt, FaPlus } from "react-icons/fa"
-=======
-import { LogoutButton, ProfileButton } from '../style/button'
-import { FaSignOutAlt, FaUserAlt } from "react-icons/fa"
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
 import Modal from './Modal'
 import { ModalLogoutButtonContainer, ModalUserInfoContainer, UserInfoName, UserInfoProfileIcon, UserInfoWorkoutLength } from '../style/modal'
 
@@ -35,7 +30,6 @@ const clicked = () => {
   return (
     <DashBoardHeader>
       <span onClick={clicked}></span>
-<<<<<<< HEAD
       <main>
         <AddWorkoutButton>
           <FaPlus />
@@ -45,12 +39,6 @@ const clicked = () => {
           {user && user.firstname}
         </ProfileButton>
       </main>
-=======
-      <ProfileButton onClick={() => setIsOpen(true)}>
-        <FaUserAlt />
-        {user && user.firstname}
-      </ProfileButton>
->>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <ModalUserInfoContainer>
           <UserInfoProfileIcon>
