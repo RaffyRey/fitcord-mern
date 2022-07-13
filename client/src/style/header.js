@@ -34,7 +34,10 @@ export const DashBoardHeader = styled.header`
  height: 100px; 
  background-color: #fff;
  border-bottom: 1px solid #e6e6e6;
+<<<<<<< HEAD
+=======
  background-color: transparent;
+>>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
  position: sticky;
  top: 0;
  left: 0;
@@ -42,6 +45,17 @@ export const DashBoardHeader = styled.header`
  align-items: center;
  justify-content: space-between;
  padding: 0 1.5rem;
+<<<<<<< HEAD
+ z-index: 1000;
+
+ main{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+ }
+=======
+>>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
 
  span{
   height: 100px;
@@ -52,6 +66,16 @@ export const DashBoardHeader = styled.header`
   background-position: center;
   cursor: pointer;
 
+<<<<<<< HEAD
+    :hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+    animation: beat .25s infinite alternate;
+    }
+
+    @keyframes beat{
+    to { transform: scale(1.4); }
+    }
+=======
    :hover{
     transform: scale3d(1.1, 1.1, 1.1);
     animation: beat .25s infinite alternate;
@@ -60,6 +84,7 @@ export const DashBoardHeader = styled.header`
    @keyframes beat{
     to { transform: scale(1.11); }
    }
+>>>>>>> 0ddcdeaa7e0b912f4b4f4288a2c25697aa60e5f6
   }
 `;
 
