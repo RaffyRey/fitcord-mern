@@ -50,4 +50,5 @@ export const Form = styled.form`
 export const DashboardContent = styled.div`
  width: 100%;
  height: calc(100% - 80px);
+ position: relative;
 `;

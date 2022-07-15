@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { DashboardContent, PageContent } from '../style/container'
 import {  WorkoutDeleteButton, WorkoutItem, WorkoutItemContainer } from '../style/workoutItem'
 import { useNavigate } from 'react-router-dom'
@@ -15,6 +15,7 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 
 const Dashboard = () => {
+  const [isOpen, setIsOpen] = useState(false)
   const navigate = useNavigate()
   const dispatch = useDispatch()
   
@@ -49,10 +50,10 @@ const Dashboard = () => {
                   <WorkoutDeleteButton>
                     <FaTrash onClick={() => dispatch(deleteWorkout(workout._id))}/>
                   </WorkoutDeleteButton>
-                  <h3>{workout.title}</h3>
-                  <p>{workout.load}</p>
-                  <p>{workout.reps}</p>
-                  <p>{formatDistanceToNow(new Date(workout.createdAt), {addSuffix: true})}</p>
+                  <h3><strong>Title: </strong>{workout.title}</h3>
+                  <p><strong>Weight: </strong>{workout.load}lbs</p>
+                  <p><strong>Reps: </strong>{workout.reps}</p>
+                  <p><strong>Date: </strong>{formatDistanceToNow(new Date(workout.createdAt), {addSuffix: true})}</p>
                 </WorkoutItem>
               ))}
             </WorkoutItemContainer>
