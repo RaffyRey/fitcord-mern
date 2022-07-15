@@ -8,6 +8,7 @@ import Loading from '../components/Loading'
 import { toast } from 'react-toastify'
 import { deleteWorkout, getWorkouts, reset } from '../features/workout/workoutSlice'
 import { FaTrash } from 'react-icons/fa'
+import WorkoutModal from '../components/WorkoutModal'
 
 // import date-fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
@@ -15,7 +16,7 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 
 const Dashboard = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  // const [isOpen, setIsOpen] = useState(false)
   const navigate = useNavigate()
   const dispatch = useDispatch()
   
@@ -59,6 +60,7 @@ const Dashboard = () => {
             </WorkoutItemContainer>
           ) : (<h3>You have not set any workout</h3>)}
       </DashboardContent>
+      {/* <WorkoutModal open={isOpen} close={() => setIsOpen(false)}/> */}
     </PageContent>
   )
 }

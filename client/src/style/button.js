@@ -97,7 +97,7 @@ export const CloseModal = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
   color: #00193b;
   border: none;
   transition: all 0.3s ease-in-out;

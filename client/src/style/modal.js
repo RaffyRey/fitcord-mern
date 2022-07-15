@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const ModalOvelay = styled.div`
+export const ModalOverlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -104,4 +104,25 @@ export const ModalLogoutButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+// workout modal
+export const WorkoutModalContainer = styled.aside`
+  position: absolute;
+  z-index: 20000;
+  width: 500px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+
+  header{
+    width: 100%;
+    height:35px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
 `;
