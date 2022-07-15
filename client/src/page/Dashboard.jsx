@@ -60,7 +60,6 @@ const Dashboard = () => {
             </WorkoutItemContainer>
           ) : (<h3>You have not set any workout</h3>)}
       </DashboardContent>
-      {/* <WorkoutModal open={isOpen} close={() => setIsOpen(false)}/> */}
     </PageContent>
   )
 }

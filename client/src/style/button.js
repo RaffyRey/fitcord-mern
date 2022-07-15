@@ -47,6 +47,12 @@ export const AddWorkoutButton = styled.button`
       background-color: #0086eb;
     }
   }
+
+  @media (max-width: 520px) {
+  width: 30px;
+  height: 30px;
+  font-size: 0.7rem;
+  }
 `;
 
 export const ProfileButton = styled.button`
@@ -131,4 +137,19 @@ export const LogoutButton = styled.button`
   svg{
     margin-right: 10px;
   }
+`;
+
+// add workout button
+export const SubmitWorkout = styled.button`
+  width: 90%;
+  height: 45px;
+  margin-top: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00193b;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
 `;
