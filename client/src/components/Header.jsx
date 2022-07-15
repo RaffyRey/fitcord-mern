@@ -8,20 +8,22 @@ import { AddWorkoutButton, LogoutButton, ProfileButton } from '../style/button'
 import { FaSignOutAlt, FaUserAlt, FaPlus } from "react-icons/fa"
 import Modal from './Modal'
 import { ModalLogoutButtonContainer, ModalUserInfoContainer, UserInfoName, UserInfoProfileIcon, UserInfoWorkoutLength } from '../style/modal'
+import WorkoutModal from './WorkoutModal'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
- const navigate = useNavigate()
- const dispatch = useDispatch()
- const { user } = useSelector(state => state.auth)
+  const [openProfileModal, setOpenProfileModal] = useState(false)
+  const [openWorkoutModal, setOpenWorkoutModal] = useState(false)
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const { user } = useSelector(state => state.auth)
 
- const onLogout = () => {
-  dispatch(logout())
-  dispatch(reset())
-  navigate('/login')
-  // toast message
-  toast.success('Successfully logged out')
-}
+  const onLogout = () => {
+    dispatch(logout())
+    dispatch(reset())
+    navigate('/login')
+    // toast message
+    toast.success('Successfully logged out')
+  }
 
 const clicked = () => {
   toast.success('FitCord')
@@ -31,15 +33,15 @@ const clicked = () => {
     <DashBoardHeader>
       <span onClick={clicked}></span>
       <main>
-        <AddWorkoutButton>
+        <AddWorkoutButton onClick={() => setOpenWorkoutModal(true)}>
           <FaPlus />
         </AddWorkoutButton>
-        <ProfileButton onClick={() => setIsOpen(true)}>
+        <ProfileButton onClick={() => setOpenProfileModal(true)}>
           <FaUserAlt />
           {user && user.firstname}
         </ProfileButton>
       </main>
-      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+      <Modal open={openProfileModal} onClose={() => setOpenProfileModal(false)}>
         <ModalUserInfoContainer>
           <UserInfoProfileIcon>
             <FaUserAlt/>
@@ -59,6 +61,8 @@ const clicked = () => {
           </LogoutButton>
         </ModalLogoutButtonContainer>
       </Modal>
+      {/* workout modal */}
+      <WorkoutModal open={openWorkoutModal} close={() => setOpenWorkoutModal(false)}/>
     </DashBoardHeader>
   )
 }

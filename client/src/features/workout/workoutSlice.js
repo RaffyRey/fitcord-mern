@@ -11,7 +11,7 @@ const initialState = {
 }
 
 // create workout
-export const createWorkout = createAsyncThunk('workout/create', async (workoutData, thunkAPI) => {
+export const createWorkouts = createAsyncThunk('workout/create', async (workoutData, thunkAPI) => {
  try {
   const token = thunkAPI.getState().auth.user.token;
   return await workoutService.createWorkout(workoutData, token);
@@ -57,15 +57,15 @@ export const workoutSlice = createSlice({
  },
  extraReducers: (builder) => {
   builder
-   .addCase(createWorkout.pending, (state) => {
+   .addCase(createWorkouts.pending, (state) => {
    state.isLoading = true
   })
-  .addCase(createWorkout.fulfilled, (state, action) => {
+  .addCase(createWorkouts.fulfilled, (state, action) => {
    state.isLoading = false
    state.isSuccess = true
    state.workouts.push(action.payload)
   })
-  .addCase(createWorkout.rejected, (state, action) => {
+  .addCase(createWorkouts.rejected, (state, action) => {
    state.isLoading = false
    state.isError = true
    state.message = action.payload
