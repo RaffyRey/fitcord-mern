@@ -33,7 +33,10 @@ export const WorkoutDeleteButton = styled.button`
  display: flex;
  align-items: center;
  justify-content: center;
+ width: 30px;
+ height: 30px;
  cursor: pointer;
+ transition: all 0.3s ease-in-out;
 
  svg{
   color: #d90429;
@@ -42,8 +45,9 @@ export const WorkoutDeleteButton = styled.button`
  }
 
  :hover{
+  background-color: #ffdab9;
 
-  &:after{
+  /* &:after{
    content: "Delete";
    position: absolute;
    color: #fff;
@@ -52,6 +56,6 @@ export const WorkoutDeleteButton = styled.button`
    border-radius: 4px;
    font-size: .8rem;
    background-color: #d90429;
-  }
+  } */
  }
 `;
