@@ -18,7 +18,6 @@ const DashboardLazy = lazy(() => import('./page/Dashboard'));
 
 function App() {
   return (
-    // hello
     <PageContainer >
       <Routes>
         <Route path="/login" element={
