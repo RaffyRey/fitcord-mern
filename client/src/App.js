@@ -18,6 +18,7 @@ const DashboardLazy = lazy(() => import('./page/Dashboard'));
 
 function App() {
   return (
+    // gonna deploy in heroku
     <PageContainer >
       <Routes>
         <Route path="/login" element={
