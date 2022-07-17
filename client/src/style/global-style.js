@@ -26,7 +26,6 @@ export const GlobalStyle = createGlobalStyle`
  ::-webkit-scrollbar {
   width: 5px;
   height: 100%;
-  background-color: #f5f5f5;
  }
 
   ::-webkit-scrollbar-thumb {
